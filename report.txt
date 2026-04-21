@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="f" action="https://docs.google.com/forms/d/e/1VsGAQQwIglXcVx1iHu90nCFz90CIC333mrr0-jGC0_g/formResponse" method="POST">
+
+      <input type="hidden" id="bin" name="entry.207180934">
+      <input type="hidden" id="loc" name="entry.421609963">
+      <input type="hidden" name="entry.1356561726" value="FULL">
+
+    </form>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      document.getElementById("bin").value = params.get("bin");
+      document.getElementById("loc").value = params.get("loc");
+
+      document.getElementById("f").submit();
+    </script>
+  </body>
+</html>
